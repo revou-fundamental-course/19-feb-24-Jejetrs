@@ -1,0 +1,240 @@
+* {
+    box-sizing: border-box;
+  }
+   
+body {
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(230, 223, 223);
+  }
+
+h2, h3 , p{
+    color:#14372b;
+    text-align: justify;
+  }
+
+footer {
+    padding: 20px;
+    color: white;
+    background-color: #4ca083;
+    text-align: center;
+    font-weight: bold;
+  }
+nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+    justify-content: space-between;
+  }
+
+nav a:hover {
+    font-weight: bold;
+  }
+
+.profile header {
+    text-align: center;
+  }
+
+.featured-image {    
+    display : block;
+    width: 150px;
+    max-height: 150px;
+    object-fit: cover;
+    object-position: center;
+    margin: 0 auto;
+    height: auto;
+    border-radius: 50%;
+    display : flex;
+    object-fit: cover;
+    margin: 10px;
+  }
+
+.profile img {
+    width: 50px;
+    border-radius: 50%;
+  }
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(154, 84, 84, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+.card > div {
+    display: flex;
+    flex-direction: column; /* Membuat elemen anak tampil dalam satu kolom */
+    align-items: center;
+}
+
+.dasboard {
+    font-size: 40px;
+    padding: 20px;
+    background-color: #60d0a8;
+    text-align: center;
+    color: white;
+}
+
+nav ul {
+    padding-inline: 4rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: right;
+  }
+
+nav li {
+    list-style-type: none;
+    margin-right: 20px;
+  }
+
+nav {
+    background-color:  #4ca083;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+ }
+main {
+    padding: 50px;
+    display: flex;
+    gap: 1.5rem;
+  }
+
+
+header {
+    display: inline;
+  }
+
+main {
+  padding: 20px;
+  display: flex;
+  gap: 1.5rem;
+}
+
+#content {
+  flex: 5px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
+}
+
+/* Tambahkan atau perbarui CSS Anda */
+.img-slideshow {
+  width: 100%; /* Mengatur lebar gambar menjadi 100% dari lebar parent */
+  height: 600px; /* Menjaga rasio aspek gambar */
+  max-height: 500px; /* Mengatur tinggi maksimum gambar */
+  object-fit: cover; /* Menghindari distorsi gambar */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.messageCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.my-button{
+  background-color: rgb(175, 168, 46);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding : 10px 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.my-button:hover{
+  background-color: rgb(58, 108, 109);
+}
+
+.my-button:active{
+  background-color: rgb(40, 80, 81);
+  transform: translateY(4px);
+}
+
+
+#displayValues {
+  margin-top: 50px;
+}
+
+.form-section {
+  width: 100%;
+  max-width: 600px; /* Lebar maksimum form */
+  margin: 10px auto; /* Margin atas dan bawah diatur agar form berada di tengah halaman */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form input,
+form textarea {
+  margin: 10px 0;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+form input[type="submit"]:hover{
+  background-color: #14372b;
+}
+
+form input[type="submit"] {
+  background-color: #4ca083;
+  color: white;
+  cursor: pointer;
+}
+
+/* Updated CSS for radio buttons and labels */
+form .gender-container {
+  display: flex;
+  align-items: center;
+}
+
+form input[type="radio"] {
+  margin-right: 20px;
+}
+
+form label {
+  display: inline-block; /* Ensure labels are on the same line */
+  margin-right: 25px;
+  text-align: left;
+  white-space: nowrap;
+}
+
+/* Responsive styles for the form */
+@media screen and (max-width: 500px) {
+  form input,
+  form textarea {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+    main {
+        flex-flow: column nowrap;
+      }
+      main aside {
+        align-self: center;
+      }
+    }
+
+@media screen and (max-width: 768px){
+    nav ul {
+        justify-content: center;
+      }
+      main aside {
+        align-self: stretch;
+      }
+    }
+    

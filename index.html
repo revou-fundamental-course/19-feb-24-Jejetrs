@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <header>
+      <div class="dasboard">
+        <h1>MY WEBSITE COMPANY</h1>
+      </div>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#profile">Our Profile</a></li>
+            <li><a href="#porto">Portofolio</a></li>
+            <li><a href="#message">Message Us</a></li>
+          </ul>
+        </nav>
+    </header>
+    <main>
+      <div id = "content">
+      
+      <article id="home" class="card">
+        <aside>
+        <h3>Hi <span id="nama"></span>, Welcome To Website</h3>
+        <div class="slideshow-container">
+            <img class="img-slideshow" src="./img/jakarta.jpg"/>
+            <img class="img-slideshow" src="./img/bandung.jpg"/>
+            <img class="img-slideshow" src="./img/surabaya.jpg"/>
+            <button class="my-button" onclick="plusDivs(-1)">Previous</button>
+            <button class="my-button" onclick="plusDivs(1)">Next</button>
+        </div>
+        </aside>
+      </article>
+
+      <article id="message" class="messageCard"> <!-- Ganti ID menjadi 'message' -->
+        <h2> Message Us </h2>
+        <div class="form-section">
+            <form name="message-form" onsubmit="return validateform()">
+                Nama: <input placeholder="Nama" type="text" name="full-name"/>
+                <br />
+                Tanggal Lahir:
+                <input type="date" name="birth-date"/>
+                <br />
+                <div class="gender-container">
+                  <input type="radio" id="male" name="gender" value="Laki-laki"/>
+                  <label for="male">Laki-laki</label>
+                
+                  <input type="radio" id="female" name="gender" value="Perempuan"/>
+                  <label for="female">Perempuan</label>
+                </div>
+                <br />
+
+                Pesan: 
+                <textarea placeholder="Pesan" name="message"></textarea>
+                <br />
+
+                <input type="submit" value="Submit"/>
+            </form>
+        </div>
+        <div id="displayValues"></div>
+      </article>
+    </div>
+    </main>
+    <footer>
+        <p>My Website Company &#169; </p>
+    </footer>
+    <script src="./js/script.js"></script>
+</body>
+</html>
